@@ -1,0 +1,47 @@
+
+.grifin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table { 
+    margin: 15px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.tr {
+    background-color: #FF5733;
+}
+
+.td-header {
+    border: 2px solid black;
+    border-radius: 15px; 
+}
+
+.tr-image {
+    background-color: #F5CC27;
+}
+
+.td{
+    border: 2px solid black;
+    border-radius: 15px; 
+}
+
+.td-header {
+    border: 0px;
+    border-radius: 40%;
+    padding: 10px;
+    color: black;
+    text-align: center;  
+    font-weight: bold;  
+    font-family: 'Arial', sans-serif;
+}
+
+.td-image {
+  border: 0px;
+  padding: 10px;
+  color: ;
+  text-align: center; 
+  border-radius: 40%;
+}
