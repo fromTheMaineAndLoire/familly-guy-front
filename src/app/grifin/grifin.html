@@ -1,14 +1,28 @@
 
-<div id="griffin"> 
+<div> 
 
-    <table class="table">
-        <tr class="tr-header"> 
-            <td class="td-header">{{ memberFirstName }} {{ memberLastName }}</td>
+    <table width="100%">
+        <tr>
+            <th class="td-header" colspan="6">Griffin Family Members</th>
         </tr>
-        <tr class="tr-image">
-            <td class="td-image"><img [src]="memberImage" alt="{{ memberFirstName }} {{ memberLastName }}" width="150" height="220"></td>
+        <tr>
+    @for (member of members; track $index) {
+        <td>
+    <table class="table">
+        <tr class="tr"> 
+            <td colspan="2" class="td-header">{{ member.firstName }} {{ member.lastName }}</td>
+        </tr>
+        <tr >
+            <td colspan="2"><img [src]="member.image" alt="{{ member.firstName }} {{ member.lastName }}" class="img"></td>
+        </tr>
+        <tr>
+            <td class="td">Age: {{ member.age }}</td>
+            <td class="td">Occupation: {{ member.occupation }}</td>
         </tr>
     </table>
- 
+        </td>
+    }
+        </tr>
+    </table>
   
 </div>   
